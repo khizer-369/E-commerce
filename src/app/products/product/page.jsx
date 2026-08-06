@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useContext, useState, Suspense } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { UserCartContext } from "@/context/CartContext";
-import { Suspense } from "react";
 
 const PageContent = () => {
     const searchParams = useSearchParams();
