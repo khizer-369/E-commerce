@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import NavBar from "@/components/NavBar";
 import BlankSpace from "@/components/BlankSpace";
 import UserOrders from "@/components/UserOrders";

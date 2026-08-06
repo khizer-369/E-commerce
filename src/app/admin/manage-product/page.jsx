@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import AdminProducts from "@/components/AdminProducts";
 import authOption from "@/lib/auth";
 import connectDb from "@/lib/db";

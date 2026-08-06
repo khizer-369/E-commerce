@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import authOption from "@/lib/auth";
 import connectDb from "@/lib/db";
 import Order from "@/models/Order";
