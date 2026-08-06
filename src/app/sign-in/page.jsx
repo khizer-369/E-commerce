@@ -2,11 +2,11 @@
 import { signIn } from "next-auth/react";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Loader from "@/components/Loader";
 
-const Page = () => {
+const PageContent = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loaderStatus, setLoaderStatus] = useState(false);
@@ -69,6 +69,15 @@ const Page = () => {
                 </form>
             </div>
         </div>
+    )
+}
+
+const Page = () => {
+
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <PageContent />
+        </Suspense>
     )
 }
 
