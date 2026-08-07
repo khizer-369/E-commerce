@@ -109,7 +109,7 @@ export async function POST(request) {
             cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/payment-failed`,
         });
 
-        return NextResponse.json({ checkOutUrl: Session.url }, { status: 201 });
+        return NextResponse.json({ message: "Order successfully created", checkOutUrl: Session.url }, { status: 201 });
 
     } catch (error) {
         console.error(error);
