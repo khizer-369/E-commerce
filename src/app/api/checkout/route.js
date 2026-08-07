@@ -27,7 +27,7 @@ export async function POST(request) {
             if (!product || product.units < item.quantity) {
                 return NextResponse.json({ message: `${product.title} is out of stock or insufficient quantity available` }, { status: 400 });
             }
-            if (product.price !== item.price) {
+            if (product.price != item.price) {
                 return NextResponse.json({ message: `Price mismatch for ${product.title}.` }, { status: 400 });
             }
             serverSideProducts.push({
