@@ -6,8 +6,7 @@ import Image from "next/image";
 const statusStyles = {
     pending: 'bg-gray-200 text-black',
     delivered: 'bg-gray-800 text-white',
-    shipped: 'bg-gray-400 text-black',
-    cancelled: 'bg-gray-200 text-black line-through',
+    failed: 'bg-red-500 text-white',
 }
 
 const paymentStyles = {
