@@ -64,7 +64,7 @@ const PageContent = () => {
                 <button onClick={() => { addToCart(product, count); }} className="h-10 w-full bg-black text-white hover:bg-black/95 transition duration-150 cursor-pointer">Add to Cart</button>
                 <button onClick={() => {
                     addToCart(product, count);
-                    router.push("/checkouts");
+                    router.push("/checkout");
                 }} className="h-10 w-full border hover:bg-gray-50 transition duration-150">Buy Now</button>
             </div>
         </div>
